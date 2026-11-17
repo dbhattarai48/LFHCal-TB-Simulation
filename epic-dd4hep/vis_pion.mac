@@ -1,0 +1,18 @@
+# Open the interactive viewer.
+/vis/open OGL
+
+# Display detector outlines so tracks remain visible.
+/vis/drawVolume
+/vis/viewer/set/style wireframe
+/vis/viewer/set/viewpointThetaPhi 80 30
+
+# Store and display particle trajectories.
+/tracking/storeTrajectory 1
+/vis/scene/add/trajectories smooth
+
+# Colour trajectories according to particle charge.
+/vis/modeling/trajectories/create/drawByCharge
+
+# Keep the event visible after tracking finishes.
+/vis/scene/endOfEventAction accumulate
+/vis/viewer/set/autoRefresh true

@@ -1,0 +1,1040 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:6 (PROJECT)"
+    message: |
+      The system is: Linux - 5.14.0-687.57.1.el9_8.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/3.31.12/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-cE9MQ3"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-cE9MQ3"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-cE9MQ3'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_94a04/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_94a04.dir/build.make CMakeFiles/cmTC_94a04.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-cE9MQ3'
+        Building CXX object CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o -c /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Debian clang version 20.1.8 (++20250708063603+0c9f909b7976-1~exp1~20250708183704.139)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-20/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-20/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-cE9MQ3 -v -fcoverage-compilation-dir=/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-cE9MQ3 -resource-dir /usr/lib/llvm-20/lib/clang/20 -dependency-file CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I/opt/local/include/eigen3 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward -internal-isystem /usr/lib/llvm-20/lib/clang/20/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 20.1.8 based upon LLVM 20.1.8 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/local/include/eigen3
+         /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14
+         /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14
+         /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward
+         /usr/lib/llvm-20/lib/clang/20/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_94a04
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94a04.dir/link.txt --verbose=1
+        Debian clang version 20.1.8 (++20250708063603+0c9f909b7976-1~exp1~20250708183704.139)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-20/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_94a04 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-20/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        /usr/bin/clang++  -v -Wl,-v CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_94a04
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-cE9MQ3'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (PROJECT)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/local/include/eigen3]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward]
+          add: [/usr/lib/llvm-20/lib/clang/20/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/opt/local/include/eigen3] ==> [/opt/local/include/eigen3]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14] ==> [/usr/include/c++/14]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14] ==> [/usr/include/x86_64-linux-gnu/c++/14]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward] ==> [/usr/include/c++/14/backward]
+        collapse include dir [/usr/lib/llvm-20/lib/clang/20/include] ==> [/usr/lib/llvm-20/lib/clang/20/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/opt/local/include/eigen3;/usr/include/c++/14;/usr/include/x86_64-linux-gnu/c++/14;/usr/include/c++/14/backward;/usr/lib/llvm-20/lib/clang/20/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (PROJECT)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-cE9MQ3']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_94a04/fast]
+        ignore line: [/opt/local/bin/gmake  -f CMakeFiles/cmTC_94a04.dir/build.make CMakeFiles/cmTC_94a04.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-cE9MQ3']
+        ignore line: [Building CXX object CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o -c /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Debian clang version 20.1.8 (++20250708063603+0c9f909b7976-1~exp1~20250708183704.139)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-20/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-20/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-cE9MQ3 -v -fcoverage-compilation-dir=/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-cE9MQ3 -resource-dir /usr/lib/llvm-20/lib/clang/20 -dependency-file CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I/opt/local/include/eigen3 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward -internal-isystem /usr/lib/llvm-20/lib/clang/20/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 20.1.8 based upon LLVM 20.1.8 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/local/include/eigen3]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward]
+        ignore line: [ /usr/lib/llvm-20/lib/clang/20/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_94a04]
+        ignore line: [/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94a04.dir/link.txt --verbose=1]
+        ignore line: [Debian clang version 20.1.8 (++20250708063603+0c9f909b7976-1~exp1~20250708183704.139)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-20/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_94a04 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-20/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_94a04] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/llvm-20/bin/../lib] ==> dir [/usr/lib/llvm-20/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_94a04.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-20/bin/../lib] ==> [/usr/lib/llvm-20/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-20/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (PROJECT)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/PTL/PTLConfig.cmake:56 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Geant4Config.cmake:301 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepConfig.cmake:57 (find_dependency)"
+      - "CMakeLists.txt:47 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-lHwWuV"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-lHwWuV"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Modules;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-lHwWuV'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_9ef39/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_9ef39.dir/build.make CMakeFiles/cmTC_9ef39.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-lHwWuV'
+        Building CXX object CMakeFiles/cmTC_9ef39.dir/src.cxx.o
+        /usr/bin/clang++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++17 -MD -MT CMakeFiles/cmTC_9ef39.dir/src.cxx.o -MF CMakeFiles/cmTC_9ef39.dir/src.cxx.o.d -o CMakeFiles/cmTC_9ef39.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-lHwWuV/src.cxx
+        Linking CXX executable cmTC_9ef39
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ef39.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_9ef39.dir/src.cxx.o -o cmTC_9ef39
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-lHwWuV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/FindX11.cmake:693 (check_library_exists)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Geant4Config.cmake:361 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepConfig.cmake:57 (find_dependency)"
+      - "CMakeLists.txt:47 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /opt/software/linux-x86_64_v2/libx11-1.8.13-rgjin3pwpm5uvf6w4gm574crzid27duh/lib/libX11.so;/opt/software/linux-x86_64_v2/libxext-1.3.7-hv7bgdi2toz3wn5bjibjb5ebjuwrjpkw/lib/libXext.so"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-aB39ey"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-aB39ey"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Modules;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-aB39ey'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_8d95c/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_8d95c.dir/build.make CMakeFiles/cmTC_8d95c.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-aB39ey'
+        Building CXX object CMakeFiles/cmTC_8d95c.dir/CheckFunctionExists.cxx.o
+        /usr/bin/clang++   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -std=c++17 -MD -MT CMakeFiles/cmTC_8d95c.dir/CheckFunctionExists.cxx.o -MF CMakeFiles/cmTC_8d95c.dir/CheckFunctionExists.cxx.o.d -o CMakeFiles/cmTC_8d95c.dir/CheckFunctionExists.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-aB39ey/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_8d95c
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d95c.dir/link.txt --verbose=1
+        /usr/bin/clang++  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_8d95c.dir/CheckFunctionExists.cxx.o -o cmTC_8d95c   -L/opt/software/linux-x86_64_v2/libx11-1.8.13-rgjin3pwpm5uvf6w4gm574crzid27duh/lib  -Wl,-rpath,/opt/software/linux-x86_64_v2/libx11-1.8.13-rgjin3pwpm5uvf6w4gm574crzid27duh/lib:/opt/software/linux-x86_64_v2/libxext-1.3.7-hv7bgdi2toz3wn5bjibjb5ebjuwrjpkw/lib /opt/software/linux-x86_64_v2/libx11-1.8.13-rgjin3pwpm5uvf6w4gm574crzid27duh/lib/libX11.so /opt/software/linux-x86_64_v2/libxext-1.3.7-hv7bgdi2toz3wn5bjibjb5ebjuwrjpkw/lib/libXext.so
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-aB39ey'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/FindX11.cmake:708 (check_function_exists)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Geant4Config.cmake:361 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepConfig.cmake:57 (find_dependency)"
+      - "CMakeLists.txt:47 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-uGxFz8"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-uGxFz8"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Modules;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-uGxFz8'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_16924/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_16924.dir/build.make CMakeFiles/cmTC_16924.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-uGxFz8'
+        Building CXX object CMakeFiles/cmTC_16924.dir/CheckFunctionExists.cxx.o
+        /usr/bin/clang++   -DCHECK_FUNCTION_EXISTS=gethostbyname -std=c++17 -MD -MT CMakeFiles/cmTC_16924.dir/CheckFunctionExists.cxx.o -MF CMakeFiles/cmTC_16924.dir/CheckFunctionExists.cxx.o.d -o CMakeFiles/cmTC_16924.dir/CheckFunctionExists.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-uGxFz8/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_16924
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16924.dir/link.txt --verbose=1
+        /usr/bin/clang++  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_16924.dir/CheckFunctionExists.cxx.o -o cmTC_16924
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-uGxFz8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/FindX11.cmake:722 (check_function_exists)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Geant4Config.cmake:361 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepConfig.cmake:57 (find_dependency)"
+      - "CMakeLists.txt:47 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-Z7X0ej"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-Z7X0ej"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Modules;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-Z7X0ej'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_aab8c/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_aab8c.dir/build.make CMakeFiles/cmTC_aab8c.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-Z7X0ej'
+        Building CXX object CMakeFiles/cmTC_aab8c.dir/CheckFunctionExists.cxx.o
+        /usr/bin/clang++   -DCHECK_FUNCTION_EXISTS=connect -std=c++17 -MD -MT CMakeFiles/cmTC_aab8c.dir/CheckFunctionExists.cxx.o -MF CMakeFiles/cmTC_aab8c.dir/CheckFunctionExists.cxx.o.d -o CMakeFiles/cmTC_aab8c.dir/CheckFunctionExists.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-Z7X0ej/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_aab8c
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aab8c.dir/link.txt --verbose=1
+        /usr/bin/clang++  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_aab8c.dir/CheckFunctionExists.cxx.o -o cmTC_aab8c
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-Z7X0ej'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/FindX11.cmake:731 (check_function_exists)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Geant4Config.cmake:361 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepConfig.cmake:57 (find_dependency)"
+      - "CMakeLists.txt:47 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-boVS3B"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-boVS3B"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Modules;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-boVS3B'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_c7d7f/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_c7d7f.dir/build.make CMakeFiles/cmTC_c7d7f.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-boVS3B'
+        Building CXX object CMakeFiles/cmTC_c7d7f.dir/CheckFunctionExists.cxx.o
+        /usr/bin/clang++   -DCHECK_FUNCTION_EXISTS=remove -std=c++17 -MD -MT CMakeFiles/cmTC_c7d7f.dir/CheckFunctionExists.cxx.o -MF CMakeFiles/cmTC_c7d7f.dir/CheckFunctionExists.cxx.o.d -o CMakeFiles/cmTC_c7d7f.dir/CheckFunctionExists.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-boVS3B/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_c7d7f
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7d7f.dir/link.txt --verbose=1
+        /usr/bin/clang++  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_c7d7f.dir/CheckFunctionExists.cxx.o -o cmTC_c7d7f
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-boVS3B'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/FindX11.cmake:740 (check_function_exists)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Geant4Config.cmake:361 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepConfig.cmake:57 (find_dependency)"
+      - "CMakeLists.txt:47 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-1Y1aGa"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-1Y1aGa"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Modules;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-1Y1aGa'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_1e5c1/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_1e5c1.dir/build.make CMakeFiles/cmTC_1e5c1.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-1Y1aGa'
+        Building CXX object CMakeFiles/cmTC_1e5c1.dir/CheckFunctionExists.cxx.o
+        /usr/bin/clang++   -DCHECK_FUNCTION_EXISTS=shmat -std=c++17 -MD -MT CMakeFiles/cmTC_1e5c1.dir/CheckFunctionExists.cxx.o -MF CMakeFiles/cmTC_1e5c1.dir/CheckFunctionExists.cxx.o.d -o CMakeFiles/cmTC_1e5c1.dir/CheckFunctionExists.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-1Y1aGa/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_1e5c1
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e5c1.dir/link.txt --verbose=1
+        /usr/bin/clang++  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_1e5c1.dir/CheckFunctionExists.cxx.o -o cmTC_1e5c1
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-1Y1aGa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/FindX11.cmake:750 (check_library_exists)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Geant4Config.cmake:361 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepConfig.cmake:57 (find_dependency)"
+      - "CMakeLists.txt:47 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-ialcOi"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-ialcOi"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Modules;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-ialcOi'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_2e6e0/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_2e6e0.dir/build.make CMakeFiles/cmTC_2e6e0.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-ialcOi'
+        Building CXX object CMakeFiles/cmTC_2e6e0.dir/CheckFunctionExists.cxx.o
+        /usr/bin/clang++   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -std=c++17 -MD -MT CMakeFiles/cmTC_2e6e0.dir/CheckFunctionExists.cxx.o -MF CMakeFiles/cmTC_2e6e0.dir/CheckFunctionExists.cxx.o.d -o CMakeFiles/cmTC_2e6e0.dir/CheckFunctionExists.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-ialcOi/CheckFunctionExists.cxx
+        Linking CXX executable cmTC_2e6e0
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e6e0.dir/link.txt --verbose=1
+        /usr/bin/ld: cannot find -lICE: No such file or directory
+        clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+        /usr/bin/clang++  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_2e6e0.dir/CheckFunctionExists.cxx.o -o cmTC_2e6e0   -L/opt/software/linux-x86_64_v2/libx11-1.8.13-rgjin3pwpm5uvf6w4gm574crzid27duh/lib  -Wl,-rpath,/opt/software/linux-x86_64_v2/libx11-1.8.13-rgjin3pwpm5uvf6w4gm574crzid27duh/lib -lICE
+        gmake[1]: *** [CMakeFiles/cmTC_2e6e0.dir/build.make:103: cmTC_2e6e0] Error 1
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-ialcOi'
+        gmake: *** [Makefile:134: cmTC_2e6e0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:37 (_qt_internal_find_third_party_dependencies)"
+      - "/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:42 (include)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Geant4Config.cmake:370 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepConfig.cmake:57 (find_dependency)"
+      - "CMakeLists.txt:47 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-VbTKZt"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-VbTKZt"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/geant4-11.4.1.east-e2eanrpfk5i5wbrhu2eswthtesewidac/lib/cmake/Geant4/Modules;/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-VbTKZt'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_75d4d/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_75d4d.dir/build.make CMakeFiles/cmTC_75d4d.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-VbTKZt'
+        Building CXX object CMakeFiles/cmTC_75d4d.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_STDATOMIC  -std=c++17 -MD -MT CMakeFiles/cmTC_75d4d.dir/src.cxx.o -MF CMakeFiles/cmTC_75d4d.dir/src.cxx.o.d -o CMakeFiles/cmTC_75d4d.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-VbTKZt/src.cxx
+        Linking CXX executable cmTC_75d4d
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75d4d.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_75d4d.dir/src.cxx.o -o cmTC_75d4d
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-VbTKZt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckSymbolExists.cmake:72 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/FindBZip2.cmake:100 (CHECK_SYMBOL_EXISTS)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/arrow-24.0.0-3w2f5jjs6nf5tk4mn2ndp73zb35ja37e/lib/cmake/Arrow/ArrowConfig.cmake:101 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/arrow-24.0.0-3w2f5jjs6nf5tk4mn2ndp73zb35ja37e/lib/cmake/Arrow/ArrowConfig.cmake:124 (arrow_find_dependencies)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/podio-1.8-wa6zpxwtszyq4c5ouxh5p5o4udtqa2km/lib/cmake/podio/podioConfig.cmake:77 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/edm4hep-1.1.1-vcgfcypzx2ygwwpndcsljorwps4hjsqi/lib/cmake/EDM4HEP/EDM4HEPConfig.cmake:39 (find_dependency)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepConfig.cmake:77 (find_dependency)"
+      - "CMakeLists.txt:47 (find_package)"
+    checks:
+      - "Looking for BZ2_bzCompressInit"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-PZ3ngU"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-PZ3ngU"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/arrow-24.0.0-3w2f5jjs6nf5tk4mn2ndp73zb35ja37e/lib/cmake/Arrow"
+    buildResult:
+      variable: "BZIP2_NEED_PREFIX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-PZ3ngU'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_4bfc9/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_4bfc9.dir/build.make CMakeFiles/cmTC_4bfc9.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-PZ3ngU'
+        Building CXX object CMakeFiles/cmTC_4bfc9.dir/CheckSymbolExists.cxx.o
+        /usr/bin/clang++  -I/opt/local/include -std=c++17 -MD -MT CMakeFiles/cmTC_4bfc9.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_4bfc9.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_4bfc9.dir/CheckSymbolExists.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-PZ3ngU/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_4bfc9
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bfc9.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_4bfc9.dir/CheckSymbolExists.cxx.o -o cmTC_4bfc9  -Wl,-rpath,/opt/local/lib /opt/local/lib/libbz2.so
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-PZ3ngU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepBuild.cmake:58 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:56 (dd4hep_set_compiler_flags)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wshadow"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-axoKMs"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-axoKMs"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-axoKMs'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_eabab/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_eabab.dir/build.make CMakeFiles/cmTC_eabab.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-axoKMs'
+        Building CXX object CMakeFiles/cmTC_eabab.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FLAG_WORKS__Wshadow  -std=c++17   -Wshadow -MD -MT CMakeFiles/cmTC_eabab.dir/src.cxx.o -MF CMakeFiles/cmTC_eabab.dir/src.cxx.o.d -o CMakeFiles/cmTC_eabab.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-axoKMs/src.cxx
+        Linking CXX executable cmTC_eabab
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eabab.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_eabab.dir/src.cxx.o -o cmTC_eabab
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-axoKMs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepBuild.cmake:58 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:56 (dd4hep_set_compiler_flags)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wformat_security"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-LzDmgU"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-LzDmgU"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: "-Wshadow  "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wformat_security"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-LzDmgU'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_8e5ab/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_8e5ab.dir/build.make CMakeFiles/cmTC_8e5ab.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-LzDmgU'
+        Building CXX object CMakeFiles/cmTC_8e5ab.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FLAG_WORKS__Wformat_security  -Wshadow    -std=c++17   -Wformat-security -MD -MT CMakeFiles/cmTC_8e5ab.dir/src.cxx.o -MF CMakeFiles/cmTC_8e5ab.dir/src.cxx.o.d -o CMakeFiles/cmTC_8e5ab.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-LzDmgU/src.cxx
+        Linking CXX executable cmTC_8e5ab
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e5ab.dir/link.txt --verbose=1
+        /usr/bin/clang++ -Wshadow    CMakeFiles/cmTC_8e5ab.dir/src.cxx.o -o cmTC_8e5ab
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-LzDmgU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepBuild.cmake:58 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:56 (dd4hep_set_compiler_flags)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wno_long_long"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-iUEsA6"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-iUEsA6"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: "-Wformat-security -Wshadow   "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wno_long_long"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-iUEsA6'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_7e384/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_7e384.dir/build.make CMakeFiles/cmTC_7e384.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-iUEsA6'
+        Building CXX object CMakeFiles/cmTC_7e384.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FLAG_WORKS__Wno_long_long  -Wformat-security -Wshadow     -std=c++17   -Wno-long-long -MD -MT CMakeFiles/cmTC_7e384.dir/src.cxx.o -MF CMakeFiles/cmTC_7e384.dir/src.cxx.o.d -o CMakeFiles/cmTC_7e384.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-iUEsA6/src.cxx
+        Linking CXX executable cmTC_7e384
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e384.dir/link.txt --verbose=1
+        /usr/bin/clang++ -Wformat-security -Wshadow     CMakeFiles/cmTC_7e384.dir/src.cxx.o -o cmTC_7e384
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-iUEsA6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepBuild.cmake:58 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:56 (dd4hep_set_compiler_flags)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wdeprecated"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-El76nP"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-El76nP"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: "-Wno-long-long -Wformat-security -Wshadow    "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wdeprecated"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-El76nP'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_e6e2b/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_e6e2b.dir/build.make CMakeFiles/cmTC_e6e2b.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-El76nP'
+        Building CXX object CMakeFiles/cmTC_e6e2b.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FLAG_WORKS__Wdeprecated  -Wno-long-long -Wformat-security -Wshadow      -std=c++17   -Wdeprecated -MD -MT CMakeFiles/cmTC_e6e2b.dir/src.cxx.o -MF CMakeFiles/cmTC_e6e2b.dir/src.cxx.o.d -o CMakeFiles/cmTC_e6e2b.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-El76nP/src.cxx
+        Linking CXX executable cmTC_e6e2b
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6e2b.dir/link.txt --verbose=1
+        /usr/bin/clang++ -Wno-long-long -Wformat-security -Wshadow      CMakeFiles/cmTC_e6e2b.dir/src.cxx.o -o cmTC_e6e2b
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-El76nP'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepBuild.cmake:58 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:56 (dd4hep_set_compiler_flags)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__fdiagnostics_color=auto"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-W5rP7q"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-W5rP7q"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: "-Wdeprecated -Wno-long-long -Wformat-security -Wshadow     "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__fdiagnostics_color=auto"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-W5rP7q'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_74ae0/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_74ae0.dir/build.make CMakeFiles/cmTC_74ae0.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-W5rP7q'
+        Building CXX object CMakeFiles/cmTC_74ae0.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FLAG_WORKS__fdiagnostics_color=auto  -Wdeprecated -Wno-long-long -Wformat-security -Wshadow       -std=c++17   -fdiagnostics-color=auto -MD -MT CMakeFiles/cmTC_74ae0.dir/src.cxx.o -MF CMakeFiles/cmTC_74ae0.dir/src.cxx.o.d -o CMakeFiles/cmTC_74ae0.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-W5rP7q/src.cxx
+        Linking CXX executable cmTC_74ae0
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74ae0.dir/link.txt --verbose=1
+        /usr/bin/clang++ -Wdeprecated -Wno-long-long -Wformat-security -Wshadow       CMakeFiles/cmTC_74ae0.dir/src.cxx.o -o cmTC_74ae0
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-W5rP7q'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepBuild.cmake:58 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:56 (dd4hep_set_compiler_flags)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wall"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-eh9G03"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-eh9G03"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: "-fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow      "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-eh9G03'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_16722/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_16722.dir/build.make CMakeFiles/cmTC_16722.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-eh9G03'
+        Building CXX object CMakeFiles/cmTC_16722.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FLAG_WORKS__Wall  -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow        -std=c++17   -Wall -MD -MT CMakeFiles/cmTC_16722.dir/src.cxx.o -MF CMakeFiles/cmTC_16722.dir/src.cxx.o.d -o CMakeFiles/cmTC_16722.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-eh9G03/src.cxx
+        Linking CXX executable cmTC_16722
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16722.dir/link.txt --verbose=1
+        /usr/bin/clang++ -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow        CMakeFiles/cmTC_16722.dir/src.cxx.o -o cmTC_16722
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-eh9G03'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepBuild.cmake:58 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:56 (dd4hep_set_compiler_flags)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wextra"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-kaO2Pd"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-kaO2Pd"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: "-Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow       "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-kaO2Pd'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_b2d6a/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_b2d6a.dir/build.make CMakeFiles/cmTC_b2d6a.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-kaO2Pd'
+        Building CXX object CMakeFiles/cmTC_b2d6a.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FLAG_WORKS__Wextra  -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow         -std=c++17   -Wextra -MD -MT CMakeFiles/cmTC_b2d6a.dir/src.cxx.o -MF CMakeFiles/cmTC_b2d6a.dir/src.cxx.o.d -o CMakeFiles/cmTC_b2d6a.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-kaO2Pd/src.cxx
+        Linking CXX executable cmTC_b2d6a
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2d6a.dir/link.txt --verbose=1
+        /usr/bin/clang++ -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow         CMakeFiles/cmTC_b2d6a.dir/src.cxx.o -o cmTC_b2d6a
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-kaO2Pd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepBuild.cmake:58 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:56 (dd4hep_set_compiler_flags)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__pedantic"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-9hUNWx"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-9hUNWx"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: "-Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow        "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-9hUNWx'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_454d5/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_454d5.dir/build.make CMakeFiles/cmTC_454d5.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-9hUNWx'
+        Building CXX object CMakeFiles/cmTC_454d5.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FLAG_WORKS__pedantic  -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow          -std=c++17   -pedantic -MD -MT CMakeFiles/cmTC_454d5.dir/src.cxx.o -MF CMakeFiles/cmTC_454d5.dir/src.cxx.o.d -o CMakeFiles/cmTC_454d5.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-9hUNWx/src.cxx
+        Linking CXX executable cmTC_454d5
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_454d5.dir/link.txt --verbose=1
+        /usr/bin/clang++ -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow          CMakeFiles/cmTC_454d5.dir/src.cxx.o -o cmTC_454d5
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-9hUNWx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepBuild.cmake:58 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:56 (dd4hep_set_compiler_flags)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Winconsistent_missing_override"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-HMlNMS"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-HMlNMS"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: "-pedantic -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow         "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Winconsistent_missing_override"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-HMlNMS'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_9e2b0/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_9e2b0.dir/build.make CMakeFiles/cmTC_9e2b0.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-HMlNMS'
+        Building CXX object CMakeFiles/cmTC_9e2b0.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FLAG_WORKS__Winconsistent_missing_override  -pedantic -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow           -std=c++17   -Winconsistent-missing-override -MD -MT CMakeFiles/cmTC_9e2b0.dir/src.cxx.o -MF CMakeFiles/cmTC_9e2b0.dir/src.cxx.o.d -o CMakeFiles/cmTC_9e2b0.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-HMlNMS/src.cxx
+        Linking CXX executable cmTC_9e2b0
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e2b0.dir/link.txt --verbose=1
+        /usr/bin/clang++ -pedantic -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow           CMakeFiles/cmTC_9e2b0.dir/src.cxx.o -o cmTC_9e2b0
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-HMlNMS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepBuild.cmake:58 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:56 (dd4hep_set_compiler_flags)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wno_cPP1z_extensions"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-aSjaoL"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-aSjaoL"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: "-Winconsistent-missing-override -pedantic -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow          "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wno_cPP1z_extensions"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-aSjaoL'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_35ab3/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_35ab3.dir/build.make CMakeFiles/cmTC_35ab3.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-aSjaoL'
+        Building CXX object CMakeFiles/cmTC_35ab3.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FLAG_WORKS__Wno_cPP1z_extensions  -Winconsistent-missing-override -pedantic -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow            -std=c++17   -Wno-c++1z-extensions -MD -MT CMakeFiles/cmTC_35ab3.dir/src.cxx.o -MF CMakeFiles/cmTC_35ab3.dir/src.cxx.o.d -o CMakeFiles/cmTC_35ab3.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-aSjaoL/src.cxx
+        Linking CXX executable cmTC_35ab3
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35ab3.dir/link.txt --verbose=1
+        /usr/bin/clang++ -Winconsistent-missing-override -pedantic -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow            CMakeFiles/cmTC_35ab3.dir/src.cxx.o -o cmTC_35ab3
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-aSjaoL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepBuild.cmake:58 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:56 (dd4hep_set_compiler_flags)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS__Wheader_hygiene"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-JLZW6V"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-JLZW6V"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: "-Wno-c++1z-extensions -Winconsistent-missing-override -pedantic -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow           "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS__Wheader_hygiene"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-JLZW6V'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_8eaf3/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_8eaf3.dir/build.make CMakeFiles/cmTC_8eaf3.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-JLZW6V'
+        Building CXX object CMakeFiles/cmTC_8eaf3.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FLAG_WORKS__Wheader_hygiene  -Wno-c++1z-extensions -Winconsistent-missing-override -pedantic -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow             -std=c++17   -Wheader-hygiene -MD -MT CMakeFiles/cmTC_8eaf3.dir/src.cxx.o -MF CMakeFiles/cmTC_8eaf3.dir/src.cxx.o.d -o CMakeFiles/cmTC_8eaf3.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-JLZW6V/src.cxx
+        Linking CXX executable cmTC_8eaf3
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8eaf3.dir/link.txt --verbose=1
+        /usr/bin/clang++ -Wno-c++1z-extensions -Winconsistent-missing-override -pedantic -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow             CMakeFiles/cmTC_8eaf3.dir/src.cxx.o -o cmTC_8eaf3
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-JLZW6V'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake/DD4hepBuild.cmake:67 (CHECK_CXX_COMPILER_FLAG)"
+      - "CMakeLists.txt:56 (dd4hep_set_compiler_flags)"
+    checks:
+      - "Performing Test CXX_FLAG_WORKS_FTLS_global_dynamic"
+    directories:
+      source: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-wizIQN"
+      binary: "/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-wizIQN"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: "-Wheader-hygiene -Wno-c++1z-extensions -Winconsistent-missing-override -pedantic -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow            "
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/software/linux-x86_64_v2/dd4hep-1.38-lxlhfjfu2zhsbd2h6hfkzssmjzb3ltsb/cmake;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/opt/software/linux-x86_64_v2/qt-base-6.11.2-d6tanunmbgvkwuzxxiuuoqc5cex6rxes/lib/cmake/Qt6/3rdparty/kwin;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules;/opt/software/linux-x86_64_v2/root-6.40.04-xv2nd6wrx33iv3yu4eoyauy4smm2pa2n/share/root/cmake/modules"
+    buildResult:
+      variable: "CXX_FLAG_WORKS_FTLS_global_dynamic"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-wizIQN'
+        
+        Run Build Command(s): /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E env VERBOSE=1 /opt/local/bin/gmake -f Makefile cmTC_d78d2/fast
+        /opt/local/bin/gmake  -f CMakeFiles/cmTC_d78d2.dir/build.make CMakeFiles/cmTC_d78d2.dir/build
+        gmake[1]: Entering directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-wizIQN'
+        Building CXX object CMakeFiles/cmTC_d78d2.dir/src.cxx.o
+        /usr/bin/clang++ -DCXX_FLAG_WORKS_FTLS_global_dynamic  -Wheader-hygiene -Wno-c++1z-extensions -Winconsistent-missing-override -pedantic -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow              -std=c++17   -ftls-model=global-dynamic -MD -MT CMakeFiles/cmTC_d78d2.dir/src.cxx.o -MF CMakeFiles/cmTC_d78d2.dir/src.cxx.o.d -o CMakeFiles/cmTC_d78d2.dir/src.cxx.o -c /home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-wizIQN/src.cxx
+        Linking CXX executable cmTC_d78d2
+        /opt/software/linux-x86_64_v2/cmake-3.31.12-3hxdtazese4rdcqzp3tnf4ehklhlpeyf/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d78d2.dir/link.txt --verbose=1
+        /usr/bin/clang++ -Wheader-hygiene -Wno-c++1z-extensions -Winconsistent-missing-override -pedantic -Wextra -Wall -fdiagnostics-color=auto -Wdeprecated -Wno-long-long -Wformat-security -Wshadow              CMakeFiles/cmTC_d78d2.dir/src.cxx.o -o cmTC_d78d2
+        gmake[1]: Leaving directory '/home/devesh/eic/epic-dd4hep/build-pion/CMakeFiles/CMakeScratch/TryCompile-wizIQN'
+        
+      exitCode: 0
+...

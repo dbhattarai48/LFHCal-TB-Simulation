@@ -1,0 +1,21 @@
+features:
+  beampipe:
+  fields:
+    marco:
+  tracking:
+    definitions_craterlake:
+    vertex_barrel:
+    vertex_barrel_support:
+    silicon_barrel:
+    mpgd_barrel:
+    silicon_disks:
+    support_service_craterlake:
+    tof_barrel:
+    tof_endcap:
+  pid:
+    dirc:
+    drich:
+  ecal:
+    forward_averaged_homogeneous:
+  hcal:
+    lfhcal:

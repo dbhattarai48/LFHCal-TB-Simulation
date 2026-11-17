@@ -1,0 +1,193 @@
+#include <TFile.h>
+#include <TTree.h>
+#include <TCanvas.h>
+#include <TGraph.h>
+#include <TH2D.h>
+#include <TStyle.h>
+#include <TSystem.h>
+#include <TPad.h>
+#include <TString.h>
+#include <iostream>
+#include <iomanip>
+#include <vector>
+
+void plot_pion2026(
+    const char* filename =
+        "sim_output/tb2026_opt1_piminus_10GeV_retry.edm4hep.root",
+    Long64_t event = 0)
+{
+    auto file = TFile::Open(filename);
+
+    if (!file || file->IsZombie()) {
+        std::cerr << "Cannot open " << filename << '\n';
+        return;
+    }
+
+    auto tree = file->Get<TTree>("events");
+
+    if (!tree || event < 0 || event >= tree->GetEntries()) {
+        std::cerr << "Requested event does not exist.\n";
+        file->Close();
+        return;
+    }
+
+    // Extract hit energy, z position, and cell ID for one event.
+    tree->SetEstimate(1000000);
+
+    Long64_t n = tree->Draw(
+        "LFHCALHits.energy:LFHCALHits.position.z:LFHCALHits.cellID",
+        "", "goff", 1, event);
+
+    if (n <= 0 || n >= tree->GetEstimate()) {
+        std::cerr << "No hits, expression error, or insufficient buffer.\n";
+        file->Close();
+        return;
+    }
+
+    const double* energy = tree->GetV1();
+    const double* z      = tree->GetV2();
+    const double* ids    = tree->GetV3();
+
+    std::vector<double> calZ, calE;
+
+    double moduleEnergy[2][3] = {};
+    int moduleHits[2][3] = {};
+
+    double calTotal = 0;
+    double triggerTotal = 0;
+    double otherTotal = 0;
+    int otherHits = 0;
+
+    for (Long64_t i = 0; i < n; ++i) {
+        // Readout encoding begins:
+        // system:8, moduleIDx:4, moduleIDy:4, ...
+        auto id = static_cast<ULong64_t>(ids[i]);
+
+        unsigned mx = (id >> 8)  & 0xF;
+        unsigned my = (id >> 12) & 0xF;
+
+        double eMeV = energy[i] * 1000.0;
+
+        // Trigger scintillators use module indices (15,15).
+        if (mx == 15 && my == 15) {
+            triggerTotal += eMeV;
+            continue;
+        }
+
+        // Six-module geometry: X = 0,1 and Y = 0,1,2.
+        if (mx >= 2 || my >= 3) {
+            otherTotal += eMeV;
+            ++otherHits;
+            continue;
+        }
+
+        calZ.push_back(z[i]);
+        calE.push_back(eMeV);
+
+        moduleEnergy[mx][my] += eMeV;
+        moduleHits[mx][my]++;
+        calTotal += eMeV;
+    }
+
+    gStyle->SetOptStat(0);
+    gStyle->SetPalette(kBird);
+    gStyle->SetPaintTextFormat(".2f");
+
+    auto canvas = new TCanvas(
+        "pion2026", "10 GeV pion: six-module geometry",
+        1400, 650);
+
+    canvas->Divide(2, 1);
+
+    // LEFT: individual calorimeter-cell hits versus z.
+    canvas->cd(1);
+    gPad->SetGrid();
+    gPad->SetLeftMargin(0.14);
+    gPad->SetBottomMargin(0.13);
+
+    if (!calZ.empty()) {
+        auto graph = new TGraph(
+            static_cast<int>(calZ.size()),
+            calZ.data(), calE.data());
+
+        graph->SetTitle(Form(
+            "Event %lld: 10 GeV #pi^{-}, beam along +z;"
+            "Global z [mm];Calorimeter hit energy [MeV]",
+            event));
+
+        graph->SetMarkerStyle(20);
+        graph->SetMarkerSize(0.6);
+        graph->SetMarkerColor(kBlue + 1);
+        graph->SetMinimum(0);
+        graph->Draw("AP");
+    }
+
+    // RIGHT: sum all calorimeter hits within each module.
+    canvas->cd(2);
+    gPad->SetLeftMargin(0.13);
+    gPad->SetRightMargin(0.20);
+    gPad->SetBottomMargin(0.13);
+
+    auto map = new TH2D(
+        "module_energy",
+        Form("Event %lld: summed module energy;"
+             "Module ID X;Module ID Y;Energy [MeV]", event),
+        2, -0.5, 1.5,
+        3, -0.5, 2.5);
+
+    map->SetDirectory(nullptr);
+    map->SetMinimum(0);
+    map->SetContour(80);
+    map->SetMarkerSize(1.8);
+
+    for (int mx = 0; mx < 2; ++mx) {
+        map->GetXaxis()->SetBinLabel(
+            mx + 1, Form("%d", mx));
+
+        for (int my = 0; my < 3; ++my) {
+            map->SetBinContent(
+                mx + 1, my + 1, moduleEnergy[mx][my]);
+        }
+    }
+
+    for (int my = 0; my < 3; ++my)
+        map->GetYaxis()->SetBinLabel(
+            my + 1, Form("%d", my));
+
+    map->Draw("COLZ TEXT");
+
+    gSystem->mkdir("sim_output", kTRUE);
+
+    canvas->SaveAs(Form(
+        "sim_output/pion2026_event%lld.png", event));
+    canvas->SaveAs(Form(
+        "sim_output/pion2026_event%lld.pdf", event));
+
+    // Print numerical results.
+    std::cout << std::fixed << std::setprecision(3)
+              << "\nEvent " << event << '\n'
+              << "Module X  Module Y  Hits  Energy [MeV]\n";
+
+    for (int my = 0; my < 3; ++my) {
+        for (int mx = 0; mx < 2; ++mx) {
+            std::cout << "    " << mx
+                      << "         " << my
+                      << "      " << moduleHits[mx][my]
+                      << "    " << moduleEnergy[mx][my]
+                      << '\n';
+        }
+    }
+
+    std::cout << "\nCalorimeter total: " << calTotal << " MeV\n"
+              << "Trigger total:     " << triggerTotal << " MeV\n"
+              << "Other IDs total:   " << otherTotal << " MeV\n"
+              << "All hits total:    "
+              << calTotal + triggerTotal + otherTotal
+              << " MeV\n";
+
+    if (otherHits)
+        std::cerr << "Warning: " << otherHits
+                  << " hits had unexpected module IDs.\n";
+
+    file->Close();
+}

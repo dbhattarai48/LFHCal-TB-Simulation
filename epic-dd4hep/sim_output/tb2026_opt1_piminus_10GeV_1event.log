@@ -1,0 +1,25 @@
+Info in <TGeoManager::TGeoManager>: Geometry default, Detector Geometry created
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+PersistencyIO    INFO  +++ Set Streamer to dd4hep::OpaqueDataBlock
+XMLLoader        INFO  +++ Processing XML file: file:/home/devesh/eic/epic-dd4hep/install/share/epic/epic_lfhcal_2026_TB_opt1.xml
+Info in <TGeoManager::SetTopVolume>: Top volume is world_volume. Master volume is world_volume
+Compact          INFO  ++ Created successfully world volume 'world_volume'. shape: TGeoBBox material:Air.
+Detector         INFO  *********** Use Top Node from manager as world volume [TGeoBBox].  Material: Air BBox: 3000 3000 10000
+PluginService    ERROR Factory requested: epic_FileLoader (N10__cxxabiv120__function_type_infoE) :bad any_cast
+PluginService    ERROR Stub is invalid!
+Traceback (most recent call last):
+  File "/opt/local/bin/ddsim", line 24, in <module>
+    sys.exit(RUNNER.run())
+             ~~~~~~~~~~^^
+  File "/opt/local/lib/python3.13/site-packages/DDSim/DD4hepSimulation.py", line 540, in run
+    kernel.loadGeometry(str("file:" + os.path.abspath(compactFile)))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cppyy.gbl.std.runtime_error: void dd4hep::sim::Geant4Kernel::loadGeometry(const string& compact_file) =>
+    runtime_error: dd4hep: apply-plugin: Failed to locate plugin epic_FileLoader. 		No factory with name Create(epic_FileLoader) for type epic_FileLoader found.
+		Please check library load path and/or plugin factory name.
+dd4hep: with plugin:epic_FileLoader
+dd4hep: Error interpreting XML nodes of type <plugin/>
+dd4hep: Error interpreting XML nodes of type <plugins/>
+dd4hep: Error interpreting XML nodes of type <include/>
+dd4hep: while parsing file:/home/devesh/eic/epic-dd4hep/install/share/epic/epic_lfhcal_2026_TB_opt1.xml
+dd4hep: with plugin:DD4hep_XMLLoader

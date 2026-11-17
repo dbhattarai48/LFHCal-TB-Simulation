@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+# SPDX-License-Identifier: LGPL-3.0-or-later
+# Copyright (C) 2024 Shujie Li
+
+import os
+import argparse
+from pathlib import Path
+
+import acts
+
+import epic
+from geometry import runGeometry
+
+if "__main__" == __name__:
+    p = argparse.ArgumentParser(
+        description="Script to generate geometry-map.json for ePIC geometry"
+    )
+    p.add_argument(
+        "-i",
+        "--xmlFile",
+        default=(
+            os.environ.get("DETECTOR_PATH", "")
+            + "/"
+            + os.environ.get("DETECTOR_CONFIG", "")
+            + ".xml"
+        ),
+        help="Input xml file containing ePIC geometry",
+    )
+    args = p.parse_args()
+
+    detector = epic.getDetector(args.xmlFile)
+    trackingGeometry = detector.trackingGeometry()
+    decorators = detector.contextDecorators()
+
+    runGeometry(
+        trackingGeometry,
+        decorators,
+        outputDir=Path.cwd(),
+        outputObj=False,
+        outputCsv=False,
+        outputJson=True,
+    )
